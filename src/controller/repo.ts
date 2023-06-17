@@ -1,4 +1,4 @@
-import { ProductType, ShoppingCartType } from "./types";
+import { ProductType, CartType } from "../types";
 
 const printProducts = (
   products: ProductType[],
@@ -9,7 +9,7 @@ const printProducts = (
   });
   console.log(nameAndCod);
 };
-const total = (shop: ShoppingCartType[], products: ProductType[]) => {
+const total = (shop: CartType[], products: ProductType[]) => {
   let total = 0;
   shop.forEach((product) => {
     const price = products.find((p: ProductType) => p.cod === product.cod)
@@ -17,13 +17,11 @@ const total = (shop: ShoppingCartType[], products: ProductType[]) => {
 
     total += product.qt * price;
   });
-  console.log(`Total da Compra R$ ${total.toFixed(2)}`);
+  console.log("");
+  console.log(`   Total da Compra R$ ${total.toFixed(2)}`);
 };
 
-const generateShopMessage = (
-  shop: ShoppingCartType[],
-  products: ProductType[]
-) => {
+const generateShopMessage = (shop: CartType[], products: ProductType[]) => {
   shop.forEach((product) => {
     const item = products.find((p: ProductType) => p.cod === product.cod);
     console.log(` ${item?.name} - ${product.qt} ${item?.unit}`);

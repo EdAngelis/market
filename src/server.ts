@@ -1,9 +1,20 @@
-import products from "./products";
-import shoppingCart from "./shopping-cart";
-import { total, printProducts, generateShopMessage } from "./repo";
+import products from "./models/products.model";
+import shoppingCart from "./models/cart.model";
+import { total, printProducts, generateShopMessage } from "./controller/repo";
+import {
+  printDutiesNames,
+  printPendentsDuties,
+} from "./controller/duties.controller";
 
-const main = () => {
+const mainMarket = () => {
+  printProducts(products);
+  generateShopMessage(shoppingCart, products);
   total(shoppingCart, products);
 };
 
-main();
+const mainDuties = () => {
+  printPendentsDuties();
+};
+
+mainMarket();
+mainDuties();
