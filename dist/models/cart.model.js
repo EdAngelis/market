@@ -15,7 +15,6 @@ const Cart = [
     { cod: "35", qt: 0.3 },
     { cod: "36", qt: 2 },
     { cod: "9", qt: 2 },
-    { cod: "24", qt: 2 },
     { cod: "37", qt: 0.3 },
     { cod: "38", qt: 1 },
 ];

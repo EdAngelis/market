@@ -22,7 +22,7 @@ exports.total = total;
 const generateShopMessage = (shop, products) => {
     shop.forEach((product) => {
         const item = products.find((p) => p.cod === product.cod);
-        console.log(` ${item === null || item === void 0 ? void 0 : item.name} - ${product.qt} ${item === null || item === void 0 ? void 0 : item.unit}`);
+        console.log(` ${item === null || item === void 0 ? void 0 : item.name} ${item === null || item === void 0 ? void 0 : item.marca} ${item === null || item === void 0 ? void 0 : item.size} - ${product.qt} ${item === null || item === void 0 ? void 0 : item.unit}`);
     });
 };
 exports.generateShopMessage = generateShopMessage;

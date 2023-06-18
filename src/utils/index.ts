@@ -1,3 +1,4 @@
 import datesInterval from "./dates-diference";
+import uriInspec from "./uri-inspec";
 
-export { datesInterval };
+export { datesInterval, uriInspec };

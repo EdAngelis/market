@@ -5,6 +5,7 @@ type ProductType = {
   unit: string;
   size?: string;
   marca?: string;
+  characteristic?: string;
   category: string;
   description?: string;
   image?: string;

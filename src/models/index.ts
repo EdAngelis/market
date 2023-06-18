@@ -1,5 +1,5 @@
 import Duties from "./duties.model";
-import Products from "./products.model";
+import Product from "./products.model";
 import Cart from "./cart.model";
 
-export { Duties, Products, Cart };
+export { Duties, Product, Cart };
