@@ -1,10 +1,12 @@
-class Res {
+import { Response } from "express";
+
+type body = {
   message: string;
   data: any;
-  constructor({ message, data }: Res) {
-    this.message = message;
-    this.data = data;
-  }
-}
+};
 
-export default Res;
+const response = (res: Response, status: number, { message, data }: body) => {
+  return res.status(status).json({ message, data });
+};
+
+export { response, body };

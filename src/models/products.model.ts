@@ -26,4 +26,6 @@ const schema = new Schema({
   category: { type: String, required: true },
 });
 
-export default model<IProducts>("Products", schema);
+const Product = model<IProducts>("Products", schema);
+
+export { Product, IProducts };

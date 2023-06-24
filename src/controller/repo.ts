@@ -25,7 +25,9 @@ const generateShopMessage = (shop: CartType[], products: ProductType[]) => {
   shop.forEach((product) => {
     const item = products.find((p: ProductType) => p.cod === product.cod);
     console.log(
-      ` ${item?.name} ${item?.marca} ${item?.characteristic} ${item?.size} - ${product.qt} ${item?.unit}`
+      ` ${item?.name} ${item?.marca} ${item?.characteristic || ""} ${
+        item?.size || ""
+      } - ${product.qt} ${item?.unit}`
     );
   });
 };

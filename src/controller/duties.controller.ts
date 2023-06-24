@@ -18,7 +18,7 @@ const printPendentsDuties = () => {
     const dutyFrequenceDays = duty.frequencyDays;
     const arraySize = duty.executionHistory?.length ?? 0;
     const daysSinceLastExecution = duty.executionHistory?.length
-      ? datesInterval(new Date(), duty.executionHistory[arraySize - 1].date)
+      ? datesInterval(new Date(), duty.executionHistory[0].date)
       : 199;
     if (daysSinceLastExecution > dutyFrequenceDays) {
       console.log(

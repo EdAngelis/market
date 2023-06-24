@@ -19,7 +19,7 @@ const printPendentsDuties = () => {
         const dutyFrequenceDays = duty.frequencyDays;
         const arraySize = (_b = (_a = duty.executionHistory) === null || _a === void 0 ? void 0 : _a.length) !== null && _b !== void 0 ? _b : 0;
         const daysSinceLastExecution = ((_c = duty.executionHistory) === null || _c === void 0 ? void 0 : _c.length)
-            ? (0, index_2.datesInterval)(new Date(), duty.executionHistory[arraySize - 1].date)
+            ? (0, index_2.datesInterval)(new Date(), duty.executionHistory[0].date)
             : 199;
         if (daysSinceLastExecution > dutyFrequenceDays) {
             console.log(`${duty.name} ${daysSinceLastExecution - dutyFrequenceDays} Days Pendents`);

@@ -9,10 +9,13 @@ const dudies: DutiesType[] = [
     frequencyDays: 3.5,
     executionHistory: [
       {
-        date: new Date("2023-06-10T17:00:00"),
+        date: new Date("2023-06-20T12:00:00"),
       },
       {
         date: new Date("2023-06-14T12:00:00"),
+      },
+      {
+        date: new Date("2023-06-10T17:00:00"),
       },
     ],
   },
@@ -23,6 +26,9 @@ const dudies: DutiesType[] = [
     description: "",
     frequencyDays: 7,
     executionHistory: [
+      {
+        date: new Date("2023-06-20T12:00:00"),
+      },
       {
         date: new Date("2023-06-10T17:00:00"),
       },
@@ -35,6 +41,12 @@ const dudies: DutiesType[] = [
     description: "",
     frequencyDays: 7,
     executionHistory: [
+      {
+        date: new Date("2023-06-20T12:00:00"),
+      },
+      {
+        date: new Date("2023-06-20T12:00:00"),
+      },
       {
         date: new Date("2023-06-10T17:00:00"),
       },
@@ -60,6 +72,9 @@ const dudies: DutiesType[] = [
     frequencyDays: 7,
     executionHistory: [
       {
+        date: new Date("2023-06-20T12:00:00"),
+      },
+      {
         date: new Date("2023-06-12T12:00:00"),
       },
     ],
@@ -83,6 +98,9 @@ const dudies: DutiesType[] = [
     description: "",
     frequencyDays: 7,
     executionHistory: [
+      {
+        date: new Date("2023-06-17T12:00:00"),
+      },
       {
         date: new Date("2023-06-09T17:00:00"),
       },
@@ -108,6 +126,9 @@ const dudies: DutiesType[] = [
     frequencyDays: 7,
     executionHistory: [
       {
+        date: new Date("2023-06-20T12:00:00"),
+      },
+      {
         date: new Date("2023-06-10T17:00:00"),
       },
     ],
@@ -132,10 +153,16 @@ const dudies: DutiesType[] = [
     frequencyDays: 3.5,
     executionHistory: [
       {
-        date: new Date("2023-06-10T17:00:00"),
+        date: new Date("2023-06-20T12:00:00"),
+      },
+      {
+        date: new Date("2023-06-20T12:00:00"),
       },
       {
         date: new Date("2023-06-14T12:00:00"),
+      },
+      {
+        date: new Date("2023-06-10T17:00:00"),
       },
     ],
   },
@@ -146,6 +173,9 @@ const dudies: DutiesType[] = [
     description: "",
     frequencyDays: 7,
     executionHistory: [
+      {
+        date: new Date("2023-06-23T12:00:00"),
+      },
       {
         date: new Date("2023-06-13T12:00:00"),
       },
@@ -158,6 +188,9 @@ const dudies: DutiesType[] = [
     description: "",
     frequencyDays: 7,
     executionHistory: [
+      {
+        date: new Date("2023-06-20T12:00:00"),
+      },
       {
         date: new Date("2023-06-12T12:00:00"),
       },
@@ -182,6 +215,12 @@ const dudies: DutiesType[] = [
     description: "",
     frequencyDays: 4,
     executionHistory: [
+      {
+        date: new Date("2023-06-23T12:00:00"),
+      },
+      {
+        date: new Date("2023-06-17T12:00:00"),
+      },
       {
         date: new Date("2023-06-12T12:00:00"),
       },
@@ -208,6 +247,18 @@ const dudies: DutiesType[] = [
     executionHistory: [
       {
         date: new Date("2023-06-08T12:00:00"),
+      },
+    ],
+  },
+  {
+    cod: "18",
+    value: 1,
+    name: "Lavar Casa",
+    description: "",
+    frequencyDays: 30,
+    executionHistory: [
+      {
+        date: new Date("2023-06-01T12:00:00"),
       },
     ],
   },

@@ -21,8 +21,8 @@ const mainDuties = () => {
   printPendentsDuties();
 };
 
-//mainMarket();
-//mainDuties();
+mainMarket();
+mainDuties();
 
 connect();
 
