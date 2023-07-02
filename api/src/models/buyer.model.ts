@@ -19,7 +19,7 @@ type Cart = {
   items: Items[];
 };
 
-interface IBuyer {
+interface IBuyer extends Document {
   name: string;
   email: string;
   password?: string;

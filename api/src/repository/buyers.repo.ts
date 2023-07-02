@@ -3,7 +3,7 @@ import { IBuyer } from "../models/buyer.model";
 
 const findMany = async (query: any) => {
   try {
-    const buyers = await Buyer.find(query);
+    const buyers = await Buyer.find(query).populate("cart.items.product");
     return buyers;
   } catch (error) {
     throw error;

@@ -6,3 +6,4 @@ api/dist
 front/node_modules
 front/.env
 front/yarn.lock
+node_modules
