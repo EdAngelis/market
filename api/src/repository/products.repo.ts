@@ -1,5 +1,4 @@
 import { Product } from "../models";
-import logger from "../tools/winston";
 import Products from "../models/products";
 import { IProducts } from "../models/products.model";
 

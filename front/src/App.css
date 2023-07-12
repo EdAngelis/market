@@ -15,4 +15,10 @@
 }
 
 .table {
+  border: solid 1px black;
+}
+
+.cart-foot {
+  padding: 20px;
+  justify-content: space-between;
 }

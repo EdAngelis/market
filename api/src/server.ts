@@ -7,7 +7,7 @@ import { total, printProducts, generateShopMessage } from "./controller/repo";
 import {
   printDutiesNames,
   printPendentsDuties,
-} from "./controller/duties.controller";
+} from "./controller/dutiess.controller";
 
 import app from "./app";
 

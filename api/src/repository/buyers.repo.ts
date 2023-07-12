@@ -39,7 +39,9 @@ const createMany = async (Buyers: IBuyer[]) => {
 
 const updateOne = async (_id: string, buyer: IBuyer) => {
   try {
-    const newBuyer = Buyer.findByIdAndUpdate(_id, buyer);
+    const newBuyer = Buyer.findByIdAndUpdate(_id, buyer, {
+      new: true,
+    }).populate("cart.items.product");
     return newBuyer;
   } catch (error) {
     throw error;

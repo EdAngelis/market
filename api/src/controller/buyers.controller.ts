@@ -68,8 +68,9 @@ const createBuyers = async (req: Request, res: Response) => {
 };
 
 const updateBuyer = async (req: Request, res: Response) => {
+  const body = req.body;
   try {
-    const data = await updateOne(req.params.id, req.body);
+    const data = await updateOne(req.params.id, body);
 
     if (!data) return response(res, 404, { message: "Buyer not found", data });
 
